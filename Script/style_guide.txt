@@ -14,6 +14,7 @@ Keyword Conventions:
 - All parameter declarations should use "declare parameter"
 - All functions should use "local function" or "global function", don't use "declare"
 - runpath() should always be preferred over run.
+- Anytime library code is run, you should use runoncepath(). 
 
 Other Conventions/General Principles:
 - All scripts should be well-commented, and each script and function should have an explanation of what it does.

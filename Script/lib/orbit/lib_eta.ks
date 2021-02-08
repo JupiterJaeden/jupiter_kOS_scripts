@@ -14,7 +14,7 @@ global function getETAToAN {
   return eta_to_an.
 }
 
-//Gets the ETA to the "midpoint" (the point halfway between the ascending node and descending node, in the direction of travel) of the input orbit.
+//Gets the ETA to the "midpoint" (the point halfway between the ascending node and descending node, in the direction of travel) of the input orbit. For the case of polar orbits, this is the point at which the orbiting object crosses the north pole of the body being orbited. 
 global function getETAToMidpoint {
   declare parameter arg_orbit. //The orbit to be analyzed
 
