@@ -1,0 +1,23 @@
+JupiterJaeden's kOS Style Guide
+
+Naming Case Conventions:
+- All local & global variables should be named with lowercase_snake_case.
+- Filenames should also use lowercase_snake_case.
+- All functions should be named usingPascalCase.
+- Names should favor being more descriptive over being shorter.
+- Any script declaring global functions should be considered a library and the filename should be prefixed with "lib".
+- All keywords should be lowercase. Exceptions are SAS and RCS keywords.
+
+Keyword Conventions:
+- All local variables should use "declare local [name] to [value]"
+- Similarly, global variables should use "declare global [name] to [value]"
+- All parameter declarations should use "declare parameter"
+- All functions should use "local function" or "global function", don't use "declare"
+- runpath() should always be preferred over run.
+
+Other Conventions/General Principles:
+- All scripts should be well-commented, and each script and function should have an explanation of what it does.
+- All parameters should be declared at the start of the function. All script-level variables should be declared at the top of the script (using local keyword). No global or script-level variable should be declared within a function.
+- Global variables should be avoided if at all possible. All functions should be local to the script unless they are meant to be exported as part of a library.
+- All code other than global or script-level variable declarations should be contained in functions. This allows usage of the return keyword and is generally cleaner.
+- Each script and function should be as self-contained and modular as possible. Global variables should generally be avoided.
